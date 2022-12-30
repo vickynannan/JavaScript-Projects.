@@ -1,0 +1,18 @@
+body {
+    background-color: lightblue;
+  }
+  p {
+    color: rgba(red8, green141,bule165, alpha1);
+    margin-left: 100px;
+    text-shadow: 1px .5px 4px rgba(red0, green0, blue0, alpha0.6);
+    font-size: medium;
+    font-family:'Times New Roman', Times, serif;}
+  input[type=text] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: 2px solid red;
+      border-radius: 4px;
+    }
+
