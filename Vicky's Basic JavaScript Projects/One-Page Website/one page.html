@@ -3,11 +3,12 @@
     <head>
         <meta charset="utf-8">
 		<meta name="viewport" content="width=device-width" />
+        <script src="main.js" defer></script>
         <title>Wonderful Trip to Hawaii!</title>
         <link rel="one_page" type="text/css" href="one_page.css">
     </head>
     <!--Body-->
-    <body class="Background">
+    <body>
 
 		 <!--Navbar-->
 		 <div class="Navbar">
@@ -19,15 +20,81 @@
 		 <!--Breaks inserted to add space between navbar and the first heading-->
 		 <br>
 		 <br>
-	
+	 <!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="Images/5.png" style="width:100%">
+      <div class="text">Hawaii1</div>
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="Images\6.png" style="width:100%">
+      <div class="text">Hawaii2</div>
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="Images/7.png" style="width:100%">
+      <div class="text">Hawaii3</div>
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="Images/8.png" style="width:100%">
+      <div class="text">Hawaii4</div>
+    </div>
+
+
+    <!-- Next and previous buttons -->
+    <div style="align-items: center;">
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <!-- Caption text -->
+    <div class="caption-container">
+        <p id="caption"></p>
+    </div>
+ </div>
+  <br>
+
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
+
+   <!-- Thumbnail image controls -->
+ <div class="thumbnail_image_control">
+   <div class="column">
+    <img class="demo" src="Images/5.png" width="300px" height="100" onclick="currentSlide(1)" alt="Hawaii1">
+   </div>
+
+   <div class="column">
+    <img class="demo" src="Images/6.png" width="300px" height="100" onclick="currentSlide(2)" alt="Hawaii2">
+   </div>
+
+   <div class="column">
+    <img class="demo" src="Images/7.png" width="300px" height="100" onclick="currentSlide(3)" alt="Hawaii3">
+   </div>
+
+   <div class="column">
+    <img class="demo" src="Images/8.png" width="300px" height="100" onclick="currentSlide(4)" alt="Hawaii4">
+   </div>
+ </div>
+      
+   
     <!--About section-->
-    <div class="Row" id="About">
-        <!--Left column-->
-        <div class="Column_2">
-            <img src="./Images/Hawaii.jpeg" alt="Replace with your own image and description">
-        </div>
-        <!--Right column-->
-        <div class="Column_1">
+    <div id="About">
+        
+    <!--Right column-->
+        <div >
             <h1>About</h1>
             <p>
 				Crystal clear swells create idyllic surfing spots, helicopter rides offer sky-high views of active volcanoes, and crisp-green jungles contrast with some of the best beaches in the world. 
@@ -40,7 +107,7 @@
     </div>
 	
 	<!--Packages section-->
-    <div class="Row" id="Packages">
+    <div  id="Packages">
         <!--Left column-->
         <div class="Column_1">
             <h1>Packages</h1>
@@ -53,32 +120,29 @@
             </p>
         </div>
         <!--Right column-->
-        <div class="Column_2">
+        <div>
 			<h2>Fun Activities in Hawaii!</h2>
 		    <video height="300" width="600" controls>
 			   <iframe src="https://youtu.be/su3ejcIeVdo" title="Top 10 Reasons to Visit Hawaii!"></iframe>
 			</video>
-	
-	</p>
-	</section>
+        </div>
 	
 	
 	<!--common section-->
-	<section>
+	
 	    <div>
-			<div>
+			
 			<h3>Please leave what your information for a quote.</h3>
-			</div>
-			<div>
+			
+			
 			<form action="" method="post" >
 				<input type="text" value="Name" size="25px">
 				<input type="text" value="Email" size="25px">
 				<input type="text" value="Inquiry"size="60px">
-			</div>
-			<div>
+			
 				<input type="submit" value="Submit">
-			</div>
-	</section>
+		</div>
+
 			
 
 
@@ -88,3 +152,5 @@
 
 <h4>Subscribe for now!</h4>
 </footer>
+</body>
+</html>
